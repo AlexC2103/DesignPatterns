@@ -9,7 +9,7 @@ class Settings
     protected function __construct() { }
     protected function __clone() { }
     public function __wakeup() {
-        throw new \Exception("Cannot unserialize a singleton.");
+        throw new \Exception("Cannot unserialize the settings.");
     }
 
     public static function getInstance(): Settings
