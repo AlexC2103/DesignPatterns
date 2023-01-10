@@ -11,10 +11,15 @@ class TestController
 
         $settings = Settings::getInstance();
 
-        $message = $settings->showMessage("Singleton is globally accessed!");
+        $message = $settings->showMessage("Settings can be globally accessed");
 
         return new Response(
-            '<html><body>'.$message.'</body></html>'
+            '<html>
+                <body style="color:green">
+                    <br>
+                    <h3>'.$message.'</h3>
+                </body>
+             </html>'
         );
     }
 }
