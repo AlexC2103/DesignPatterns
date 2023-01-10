@@ -3,3 +3,7 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+test_message:
+    path: /app/test
+    controller: App\Controller\TestController::showMessage
