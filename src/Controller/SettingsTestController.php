@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Helpers\Settings;
 use Symfony\Component\HttpFoundation\Response;
 
-class TestController
+class SettingsTestController
 {
     public function showMessage(): Response {
 
@@ -16,10 +16,10 @@ class TestController
         return new Response(
             '<html>
                 <body style="color:green">
-                    <br>
+                  <br>
                     <h3>'.$message.'</h3>
                 </body>
-             </html>'
+              </html>'
         );
     }
 }

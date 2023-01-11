@@ -2,9 +2,11 @@
 
 namespace App\Helpers;
 
+//implementation of a singleton method
 class Settings
 {
     private static $instances;
+    private $backGroundColor;
 
     protected function __construct() { }
     protected function __clone() { }
@@ -23,6 +25,12 @@ class Settings
 
     public function showMessage($message) {
         return $message.'!';
+    }
+    public function setBackGroundColor($color) {
+        $this->backGroundColor = $color;
+    }
+    public function getBackGroundColor() {
+        return $this->backGroundColor;
     }
 }
 

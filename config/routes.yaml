@@ -4,6 +4,10 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-test_message:
-    path: /app/test
-    controller: App\Controller\TestController::showMessage
+settings_test:
+    path: /app/settings_test
+    controller: App\Controller\SettingsTestController::showMessage
+
+factory_test:
+    path: /app/animalFactory_test
+    controller: App\Controller\FactoryTestController::testFactory
