@@ -11,3 +11,7 @@ settings_test:
 factory_test:
     path: /app/animalFactory_test
     controller: App\Controller\FactoryTestController::testFactory
+
+observer_test:
+    path: /app/observer_test
+    controller: App\Controller\ObserverTestController::observerTest

@@ -2,6 +2,9 @@
 
 namespace App\Helpers;
 
+
+use App\Helpers\Observer\Subscriber;
+
 class EventManager
 {
     //start singleton settings
