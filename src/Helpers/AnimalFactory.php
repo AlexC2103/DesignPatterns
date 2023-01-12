@@ -11,7 +11,9 @@ abstract class AnimalFactory
 interface Animal
 {
     public function increaseNumber(): void;
+
     public function getSpecies(): string;
+
     public function makeSound(): string;
 }
 
@@ -19,7 +21,8 @@ class Dog implements Animal
 {
     private $species;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->species = 'Dog';
     }
 
@@ -28,11 +31,13 @@ class Dog implements Animal
         $this->numberOfSubjects++;
     }
 
-    public function getSpecies(): string {
+    public function getSpecies(): string
+    {
         return $this->species;
     }
 
-    public function makeSound(): string {
+    public function makeSound(): string
+    {
         return "Woof Woof!";
     }
 }
@@ -41,7 +46,8 @@ class Cat implements Animal
 {
     private $species;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->species = 'Cat';
     }
 
@@ -50,11 +56,13 @@ class Cat implements Animal
         $this->numberOfSubjects++;
     }
 
-    public function getSpecies(): string {
+    public function getSpecies(): string
+    {
         return $this->species;
     }
 
-    public function makeSound(): string {
+    public function makeSound(): string
+    {
         return "Meow!";
     }
 }
@@ -63,7 +71,8 @@ class Mouse implements Animal
 {
     private $species;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->species = 'Mouse';
     }
 
@@ -72,38 +81,45 @@ class Mouse implements Animal
         $this->numberOfSubjects++;
     }
 
-    public function getSpecies(): string {
+    public function getSpecies(): string
+    {
         return $this->species;
     }
 
-    public function makeSound(): string {
+    public function makeSound(): string
+    {
         return "Squeak!";
     }
 }
+
 class DogFactory extends AnimalFactory
 {
-    public function createAnimal(): Dog {
+    public function createAnimal(): Dog
+    {
         return new Dog;
     }
 }
 
 class CatFactory extends AnimalFactory
 {
-    public function createAnimal(): Cat {
+    public function createAnimal(): Cat
+    {
         return new Cat;
     }
 }
 
 class MouseFactory extends AnimalFactory
 {
-    public function createAnimal(): Mouse {
+    public function createAnimal(): Mouse
+    {
         return new Mouse;
     }
 }
 
 class RandomFactory extends AnimalFactory
 {
-    public function createAnimal(): Animal {
+    public function createAnimal(): Animal
+    {
         switch (rand(1, 3)) {
             case 1:
                 return new Dog;

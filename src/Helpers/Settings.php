@@ -8,9 +8,12 @@ class Settings
     private static $instances;
     private $backGroundColor;
 
-    protected function __construct() { }
-    protected function __clone() { }
-    public function __wakeup() {
+    protected function __construct() {}
+
+    protected function __clone() {}
+
+    public function __wakeup()
+    {
         throw new \Exception("Cannot unserialize the settings.");
     }
 
@@ -23,13 +26,18 @@ class Settings
         return self::$instances;
     }
 
-    public function showMessage($message) {
-        return $message.'!';
+    public function showMessage($message)
+    {
+        return $message . '!';
     }
-    public function setBackGroundColor($color) {
+
+    public function setBackGroundColor($color)
+    {
         $this->backGroundColor = $color;
     }
-    public function getBackGroundColor() {
+
+    public function getBackGroundColor()
+    {
         return $this->backGroundColor;
     }
 }
