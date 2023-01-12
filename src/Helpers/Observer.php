@@ -37,11 +37,6 @@ class Store extends Publishers
     {
         // TODO: Implement removeSubscriber() method.
     }
-
-    public function notifySubscribers()
-    {
-
-    }
 }
 
 $eventManager = EventManager::getInstance();
