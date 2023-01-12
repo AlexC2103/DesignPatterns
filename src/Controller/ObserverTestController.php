@@ -22,6 +22,8 @@ class ObserverTestController extends AbstractController
         $eventManager->attach($user2, $publisher1->exportEvent('EvenimentPublisher1'));
         $eventManager->attach($user3, $publisher1->exportEvent('EvenimentPublisher1'));
 
+        $eventManager->notify('EvenimentPublisher2');
+
         return $this->render('observerTemplates/observer.twig.html');
     }
 }
