@@ -28,8 +28,16 @@ class EventManager
 
     private $subscribers = [];
 
+    private function initEventGroup(string $event): void
+    {
+        if (!isset($this->subscribers[$event])) {
+            $this->subscribers[$event] = [];
+        }
+    }
+
     private function getEventSubscribers(string $event): array
     {
+        $this->initEventGroup($event);
         $group = $this->subscribers[$event];
 
         return $group;

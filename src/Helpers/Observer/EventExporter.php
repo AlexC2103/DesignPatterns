@@ -2,7 +2,7 @@
 
 namespace App\Helpers\Observer;
 
-class EventExporter extends Publishers
+class EventExporter extends Publisher
 {
     public function exportEvent(string $event): string
     {

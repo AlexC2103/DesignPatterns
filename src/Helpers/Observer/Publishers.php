@@ -2,12 +2,10 @@
 
 namespace App\Helpers\Observer;
 
-use App\Helpers\Observer\Publisher;
-
-abstract class Publishers implements Publisher
+interface Publishers
 {
-    //abstract public function addSubscriber(Subscriber $subscriber): void;
-    //abstract public function removeSubscriber(Subscriber $subscriber): void;
+    //public function addSubscriber(Subscriber $subscriber): void;
+    //public function removeSubscriber(Subscriber $subscriber): void;
 
-    abstract public function exportEvent(string $event): string;
+    public function exportEvent(string $event): string;
 }
