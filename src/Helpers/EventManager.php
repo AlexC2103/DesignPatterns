@@ -57,12 +57,12 @@ class EventManager
         }
     }
 
-    public function notify(string $event): void
+    public function notify(string $event, array $params): void
     {
         echo $event." is being broadcasted.\n";
 
         foreach ($this->getEventSubscribers($event) as $subscriber) {
-            $subscriber->update($event);
+            $subscriber->sendEmail($params[0]);
         }
     }
 }

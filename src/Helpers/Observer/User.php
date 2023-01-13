@@ -25,10 +25,9 @@ class User implements Subscriber
         return $this->email;
     }
 
-    public function update(string $data): void
+    public function sendEmail(string $data): void
     {
-        $this->attributes = array_merge($this->attributes, $data);
+        $this->attributes = array_merge($this->attributes, [$data]);
     }
 }
 
-$eventManager = EventManager::getInstance();

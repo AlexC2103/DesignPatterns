@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class FactoryTestController
 {
-    public function testFactory(): Response
+    public function factoryTest(): Response
     {
         $dogFactory = new DogFactory();
         $dog = $dogFactory->createAnimal();

@@ -5,12 +5,12 @@ controllers:
     type: attribute
 
 settings_test:
-    path: /app/settings_test
-    controller: App\Controller\SettingsTestController::showMessage
+    path: /app/singleton_test
+    controller: App\Controller\SettingsTestController::singletonTest
 
 factory_test:
-    path: /app/animalFactory_test
-    controller: App\Controller\FactoryTestController::testFactory
+    path: /app/factory_test
+    controller: App\Controller\FactoryTestController::factoryTest
 
 observer_test:
     path: /app/observer_test

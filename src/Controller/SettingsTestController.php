@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SettingsTestController
 {
-    public function showMessage(): Response {
+    public function singletonTest(): Response {
 
         $settings = Settings::getInstance();
 
