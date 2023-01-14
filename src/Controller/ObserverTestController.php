@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Helpers\Observer\EventExporter;
-use App\Helpers\EventManager;
+use App\Helpers\Observer\EventManager;
 use App\Helpers\Observer\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 

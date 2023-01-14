@@ -2,8 +2,7 @@
 
 namespace App\Controller;
 
-use App\Helpers\AnimalFactory;
-use App\Helpers\DogFactory;
+use App\Helpers\Factory\ConcreteFactories\DogFactory;
 use Symfony\Component\HttpFoundation\Response;
 
 class FactoryTestController

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace App\Helpers\Observer;
 
 
 use App\Helpers\Observer\Subscriber;
