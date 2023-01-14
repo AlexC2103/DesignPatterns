@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers;
+namespace App\Helpers\Singleton;
 
 //implementation of a singleton method
 class Settings

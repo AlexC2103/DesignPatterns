@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Helpers\Settings;
+use App\Helpers\Singleton\Settings;
 use Symfony\Component\HttpFoundation\Response;
 
 class SettingsTestController
