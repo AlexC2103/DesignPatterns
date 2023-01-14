@@ -15,3 +15,7 @@ factory_test:
 observer_test:
     path: /app/observer_test
     controller: App\Controller\ObserverTestController::observerTest
+
+strategy_test:
+    path: /app/strategy_test
+    controller: App\Controller\StrategyTestController::strategyTest
