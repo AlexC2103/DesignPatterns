@@ -17,5 +17,5 @@ observer_test:
     controller: App\Controller\ObserverTestController::observerTest
 
 strategy_test:
-    path: /app/strategy_test
+    path: /app/strategy_test/{strategy}
     controller: App\Controller\StrategyTestController::strategyTest
