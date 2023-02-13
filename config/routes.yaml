@@ -19,3 +19,11 @@ observer_test:
 strategy_test:
     path: /app/strategy_test/{strategy}
     controller: App\Controller\StrategyTestController::strategyTest
+
+builder_test:
+    path: /app/builder_test
+    controller: App\Controller\BuilderTestController::builderTest
+
+adapter_test:
+    path: /app/adapter_test
+    controller: App\Controller\AdapterTestController::adapterTest
