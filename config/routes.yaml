@@ -35,3 +35,7 @@ decorator_test:
 prototype_test:
     path: /app/prototype_test
     controller: App\Controller\PrototypeTestController::prototypeTest
+
+facade_test:
+    path: /app/facade_test
+    controller: App\Controller\FacadeTestController::facadeTest
