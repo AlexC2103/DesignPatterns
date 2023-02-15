@@ -26,8 +26,6 @@ class AdapterTestController
         $notification = new SlackNotification($slackApi, "Example.com developers");
         clientCode($notification);
 
-        return new Response (
-
-        );
+        return new Response ();
     }
 }

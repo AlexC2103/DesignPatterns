@@ -12,8 +12,6 @@ class FacadeTestController
         $facade = new YouTubeDownloader("APIKEY-XXXXXXXXX");
         $facade->downloadVideo("https://www.youtube.com/watch?v=QH2-TGUlwu4");
 
-        return new Response (
-
-        );
+        return new Response ();
     }
 }

@@ -39,3 +39,7 @@ prototype_test:
 facade_test:
     path: /app/facade_test
     controller: App\Controller\FacadeTestController::facadeTest
+
+proxy_test:
+    path: /app/proxy_test
+    controller: App\Controller\ProxyTestController::proxyTest
