@@ -27,3 +27,11 @@ builder_test:
 adapter_test:
     path: /app/adapter_test
     controller: App\Controller\AdapterTestController::adapterTest
+
+decorator_test:
+    path: /app/decorator_test
+    controller: App\Controller\DecoratorTestController::decoratorTest
+
+prototype_test:
+    path: /app/prototype_test
+    controller: App\Controller\PrototypeTestController::prototypeTest

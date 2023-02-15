@@ -7,7 +7,7 @@ use App\Helpers\Builder\MysqlQueryBuilder;
 
 class BuilderTestController
 {
-    function builderTest(): Response
+    public function builderTest(): Response
     {
         $queryBuilder = new MysqlQueryBuilder();
         $query = $queryBuilder
