@@ -43,3 +43,7 @@ facade_test:
 proxy_test:
     path: /app/proxy_test
     controller: App\Controller\ProxyTestController::proxyTest
+
+CoR_test:
+    path: /app/chainOfResponsibility_test
+    controller: App\Controller\ChainOfResponsibilityController::corTest
