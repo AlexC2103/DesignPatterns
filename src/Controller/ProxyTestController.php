@@ -11,16 +11,17 @@ class ProxyTestController
 {
     private function clientCode(Downloader $subject)
     {
-        $result = $subject->download("http://example.com/");
-        $result = $subject->download("http://example.com/");
+        $subject->download("http://example.com/");
+        $subject->download("http://example.com/");
     }
 
     public function proxyTest(): Response {
-        echo " Executing client code with real subject: ";
+
+        echo " EXECUTING CLIENT CODE WITH REAL SUBJECT: ";
         $realSubject = new SimpleDownloader();
         $this->clientcode($realSubject);
 
-        echo " Executing the same client code with a proxy ";
+        echo " EXECUTING THE SAME CLIENT CODE WITH A PROXY ";
         $proxy = new CachingDownloader($realSubject);
         $this->clientCode($proxy);
         return new Response(
