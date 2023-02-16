@@ -23,7 +23,6 @@ class ChainOfResponsibilityController
         $server->setMiddleware($middleware);
 
         $userRegister = array("admin@example.com" => "admin", "user@example.com" => "pass", "asd" => "123");
-        $i = 0;
 
         foreach($userRegister as $email => $password) {
             $server->logIn($email, $password);

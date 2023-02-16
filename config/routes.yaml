@@ -47,3 +47,7 @@ proxy_test:
 CoR_test:
     path: /app/chainOfResponsibility_test
     controller: App\Controller\ChainOfResponsibilityController::corTest
+
+command_test:
+    path: /app/command_test
+    controller: App\Controller\CommandTestController::commandTest

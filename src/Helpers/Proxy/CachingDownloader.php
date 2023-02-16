@@ -2,12 +2,9 @@
 
 namespace App\Helpers\Proxy;
 
-use function MongoDB\Driver\Monitoring\removeSubscriber;
-
 class CachingDownloader implements Downloader
 {
     private $downloader;
-
 
     private $cache = [];
 
