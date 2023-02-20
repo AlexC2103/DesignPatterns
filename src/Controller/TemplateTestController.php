@@ -4,18 +4,20 @@ namespace App\Controller;
 
 use App\Helpers\Template\ConcreteClasses\Facebook;
 use App\Helpers\Template\ConcreteClasses\Twitter;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Source;
 
 class TemplateTestController
 {
-    public function templateTest(): Response
+    public function templateTest(Request $request): Response
     {
         $username = "Neo";
         $password = "123";
-        $message = "Message for the SocialNetwork";
 
-        $choice = 2;
+        $choice = $request->query->get("key");
+        $choice = $request->request->get("key");
+
+        $message = "Message for the SocialNetwork";
 
         if ($choice == 1) {
             $network = new Facebook($username, $password);
@@ -25,6 +27,14 @@ class TemplateTestController
 
         $network->post($message);
 
-        return new Response();
+        return new Response(
+            '<html>
+                        <body>
+                            <form method="post">
+                                <input type="submit" name="key" value="2">
+                                <input type="submit" name="key" value="1">
+                            </form> 
+                        </body>
+                    </html>');
     }
 }
