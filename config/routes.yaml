@@ -55,3 +55,7 @@ command_test:
 template_test:
     path: /app/template_test
     controller: App\Controller\TemplateTestController::templateTest
+
+abstractFactory_test:
+    path: /app/abstractFactory_test
+    controller: App\Controller\AbstractFactoryTestController::abstractFactoryTest
