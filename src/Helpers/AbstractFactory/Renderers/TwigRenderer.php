@@ -2,17 +2,13 @@
 
 namespace App\Helpers\AbstractFactory\Renderers;
 
-use Twig\Environment;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class TwigRenderer implements TemplateRenderer
+class TwigRenderer extends AbstractExtension implements TemplateRenderer
 {
-
-    public function __construct(private Environment $twig)
-    {
-    }
-
     public function render(string $templateString, array $arguments = []): string
     {
-        return $this->twig->render($templateString, $arguments);
+        return \Twig::render($templateString, $arguments);
     }
 }
