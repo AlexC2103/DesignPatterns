@@ -39,7 +39,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpdoc-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofphp/proxy-manager-lts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/link" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/security-bundle" />
@@ -103,7 +102,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/global-state" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/version" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/laminas/laminas-code" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/complexity" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/diff" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />

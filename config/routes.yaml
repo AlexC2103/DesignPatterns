@@ -51,3 +51,7 @@ CoR_test:
 command_test:
     path: /app/command_test
     controller: App\Controller\CommandTestController::commandTest
+
+template_test:
+    path: /app/template_test
+    controller: App\Controller\TemplateTestController::templateTest
