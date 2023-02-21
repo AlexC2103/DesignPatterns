@@ -63,3 +63,7 @@ abstractFactory_test:
 bridge_test:
     path: /app/bridge_test
     controller: App\Controller\BridgeTestController::bridgeTest
+
+composite_test:
+    path: /app/composite_test
+    controller: App\Controller\compositeTestController::compositeTest

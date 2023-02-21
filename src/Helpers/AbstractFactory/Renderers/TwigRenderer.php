@@ -2,13 +2,13 @@
 
 namespace App\Helpers\AbstractFactory\Renderers;
 
-use Twig\Extension\AbstractExtension;
-use Twig\TwigFilter;
+use Symfony\Component\Console\Command\Command;
+use Twig\Environment;
 
-class TwigRenderer extends AbstractExtension implements TemplateRenderer
+class TwigRenderer extends Command implements TemplateRenderer
 {
     public function render(string $templateString, array $arguments = []): string
     {
-        return \Twig::render($templateString, $arguments);
+        return $this->twig->render($templateString, $arguments);
     }
 }

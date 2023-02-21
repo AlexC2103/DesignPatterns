@@ -5,9 +5,11 @@ namespace App\Controller;
 use App\Helpers\AbstractFactory\ConcreteFactories\PHPTemplateFactory;
 use App\Helpers\AbstractFactory\ConcreteFactories\TwigTemplateFactory;
 use App\Helpers\AbstractFactory\Page;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\HttpFoundation\Response;
+use Twig\Environment;
 
-class AbstractFactoryTestController
+class AbstractFactoryTestController extends Command
 {
     public function abstractFactoryTest(): Response {
 

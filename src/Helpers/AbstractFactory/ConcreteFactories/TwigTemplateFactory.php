@@ -9,11 +9,11 @@ use App\Helpers\AbstractFactory\Renderers\TwigRenderer;
 use App\Helpers\AbstractFactory\Template\TemplateFactory;
 use App\Helpers\AbstractFactory\Titles\TitleTemplate;
 use App\Helpers\AbstractFactory\Titles\TwigTitleTemplate;
+use Symfony\Component\Console\Command\Command;
 use Twig\Environment;
 
-class TwigTemplateFactory implements TemplateFactory
+class TwigTemplateFactory extends Command implements TemplateFactory
 {
-
     public function createTitleTemplate(): TitleTemplate
     {
         return new TwigTitleTemplate();

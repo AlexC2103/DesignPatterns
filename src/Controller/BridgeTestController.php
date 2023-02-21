@@ -17,7 +17,7 @@ class BridgeTestController
 
         $page = new SimplePage($HTMLRenderer, "Home", "Welcome to our Simple Page!");
 
-        //$page->changeRenderer($JSONRenderer);
+        $page->changeRenderer($JSONRenderer);
 
         return new Response(
             $page->view()
