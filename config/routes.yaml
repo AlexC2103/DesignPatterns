@@ -66,4 +66,8 @@ bridge_test:
 
 composite_test:
     path: /app/composite_test
-    controller: App\Controller\compositeTestController::compositeTest
+    controller: App\Controller\CompositeTestController::compositeTest
+
+iterator_test:
+    path: /app/iterator_test
+    controller: App\Controller\IteratorTestController::iteratorTest
