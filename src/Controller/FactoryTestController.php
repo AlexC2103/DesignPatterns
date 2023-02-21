@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use App\Helpers\Factory\ConcreteFactories\DogFactory;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class FactoryTestController
 {
+    #[Route('/app/factory_test', name: 'factory')]
     public function factoryTest(): Response
     {
         $dogFactory = new DogFactory();

@@ -7,9 +7,11 @@ use App\Helpers\Composite\ConcreteComposite\Form;
 use App\Helpers\Composite\FormElement;
 use App\Helpers\Composite\Input;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class CompositeTestController
 {
+
     private function getProductForm(): FormElement
     {
         $form = new Form('product', "Add product", "/product/add");
@@ -36,7 +38,7 @@ class CompositeTestController
 
         $form->setData($data);
     }
-
+    #[Route('/app/composite_test', name: 'composite')]
     public function compositeTest(): Response
     {
         $form = $this->getProductForm();

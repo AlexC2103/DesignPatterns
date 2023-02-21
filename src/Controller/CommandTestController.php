@@ -7,9 +7,11 @@ use App\Helpers\Command\Invoker;
 use App\Helpers\Command\Receiver;
 use App\Helpers\Command\SimpleCommand;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class CommandTestController
 {
+    #[Route('/app/command_test', name: 'command')]
     public function commandTest(): Response {
         $invoker = new Invoker();
         $invoker->setOnStart(new SimpleCommand("Say Hi!"));

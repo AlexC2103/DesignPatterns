@@ -6,9 +6,11 @@ use App\Helpers\Observer\EventExporter;
 use App\Helpers\Observer\EventManager;
 use App\Helpers\Observer\User;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ObserverTestController extends AbstractController
 {
+    #[Route('/app/observer_test', name: 'observer')]
     public function observerTest()
     {
         $eventManager = EventManager::getInstance();

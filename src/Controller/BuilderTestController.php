@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use App\Helpers\Builder\MysqlQueryBuilder;
+use Symfony\Component\Routing\Annotation\Route;
 
 class BuilderTestController
 {
+    #[Route('/app/builder_test', name: 'builder')]
     public function builderTest(): Response
     {
         $queryBuilder = new MysqlQueryBuilder();

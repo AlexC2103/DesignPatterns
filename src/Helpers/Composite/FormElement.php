@@ -34,7 +34,7 @@ namespace App\Helpers\Composite;
 
 abstract class FormElement
 {
-    private $data;
+    protected $data;
 
     public function __construct(
         protected string $name,

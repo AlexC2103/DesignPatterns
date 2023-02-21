@@ -6,9 +6,11 @@ use App\Helpers\Template\ConcreteClasses\Facebook;
 use App\Helpers\Template\ConcreteClasses\Twitter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class TemplateTestController
 {
+    #[Route('/app/template_test', name: 'template')]
     public function templateTest(Request $request): Response
     {
         $username = "Neo";

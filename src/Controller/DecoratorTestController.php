@@ -7,6 +7,7 @@ use App\Helpers\Decorator\ConcreteDecorators\PlainTextFilter;
 use App\Helpers\Decorator\InputFormat;
 use App\Helpers\Decorator\TextInput;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class DecoratorTestController
 {
@@ -15,6 +16,7 @@ class DecoratorTestController
         return $format->formatText($text);
     }
 
+    #[Route('/app/decorator_test', name: 'decorator')]
     public function decoratorTest(): Response
     {
         $dangerousComment = <<< HERE

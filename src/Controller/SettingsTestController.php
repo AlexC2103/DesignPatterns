@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use App\Helpers\Singleton\Settings;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class SettingsTestController
 {
+    #[Route('/app/singleton_test', name: 'singleton')]
     public function singletonTest(): Response {
 
         $settings = Settings::getInstance();

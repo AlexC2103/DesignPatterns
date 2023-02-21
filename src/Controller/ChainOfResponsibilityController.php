@@ -7,9 +7,11 @@ use App\Helpers\ChainOfResponsability\ConcreteHandlers\ThrottlingMiddleware;
 use App\Helpers\ChainOfResponsability\ConcreteHandlers\UserExistsMiddleware;
 use App\Helpers\ChainOfResponsability\Server;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ChainOfResponsibilityController
 {
+    #[Route('/app/chainOfResponsibility_test', name: 'chainOfResponsibility')]
     public function corTest(): Response {
         $server = new Server();
         $server->register("admin@example.com", "admin");

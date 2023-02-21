@@ -7,9 +7,11 @@ use App\Helpers\Adapter\NotificationTypes\SlackNotification;
 use App\Helpers\Adapter\Notification;
 use App\Helpers\Adapter\SlackApi;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class AdapterTestController
 {
+    #[Route('/app/adapter_test', name: 'adapter')]
     public function adapterTest(): Response
     {
         function clientCode(Notification $notification)

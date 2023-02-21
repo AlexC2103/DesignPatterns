@@ -5,9 +5,11 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Helpers\Prototype\Author;
 use App\Helpers\Prototype\Page;
+use Symfony\Component\Routing\Annotation\Route;
 
 class PrototypeTestController extends AbstractController
 {
+    #[Route('/app/prototype_test', 'prototype')]
     public function prototypeTest()
     {
         $author = new Author("Alex");

@@ -7,9 +7,11 @@ use App\Helpers\Strategy\Strategies\PublicTransportStrategy;
 use App\Helpers\Strategy\Strategies\RoadStrategy;
 use App\Helpers\Strategy\Strategies\WalkingStrategy;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class StrategyTestController
 {
+    #[Route('/app/strategy_test/{strategy}', name: 'strategy')]
     public function strategyTest($strategy): Response
     {
         switch ($strategy) {
