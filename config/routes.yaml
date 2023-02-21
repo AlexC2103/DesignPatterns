@@ -59,3 +59,7 @@ template_test:
 abstractFactory_test:
     path: /app/abstractFactory_test
     controller: App\Controller\AbstractFactoryTestController::abstractFactoryTest
+
+bridge_test:
+    path: /app/bridge_test
+    controller: App\Controller\BridgeTestController::bridgeTest
