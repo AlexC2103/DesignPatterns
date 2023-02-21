@@ -71,3 +71,7 @@ composite_test:
 iterator_test:
     path: /app/iterator_test
     controller: App\Controller\IteratorTestController::iteratorTest
+
+state_test:
+    path: /app/state_test
+    controller: App\Controller\StateTestController::stateTest
